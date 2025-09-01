@@ -27,5 +27,4 @@ def print_lyrics():   # tuples(line, delay)
         print() # after finishing the current line go to the new line
         time.sleep(delays_after_line[i]) # delay after the whole line
 
-print_lyrics() 
-
+print_lyrics() #fuction call
