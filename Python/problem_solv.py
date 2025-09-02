@@ -1,10 +1,8 @@
-n= int (input("enter the num: "))
-
-if(n%2==1):
-   print("Weird")
-elif(n%2==0, 2<= n >=5):
-    print("Not Weird")
-elif(n%2==0,6<= n >=20):
-    print("Weird")
-else:
-    print("Not Weird")
+a = int(input())
+b = int(input())
+sum = a + b
+diff = a - b
+product = a*b
+print(sum)
+print(diff)
+print(product)
