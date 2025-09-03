@@ -1,5 +1,6 @@
-n = int(input())
-i = 0
-while i < n:
-    print(i *i)
-    i+=1
+year = int(input())
+
+if ( year%2==0 and year%100 != 0) or year % 400 == 0 :
+    print(True)
+else:
+    print(False)
