@@ -54,10 +54,23 @@
 #     else:
 #         print("OUT")
 
-n = int(input())
-count = 0
-for i in range(n):
-    a,b,c = map(int,input().split())
-    if (a+b+c >= 2):
-        count+=1
-print(count)
+# n = int(input())
+# count = 0
+# for i in range(n):
+#     a,b,c = map(int,input().split())
+#     if (a+b+c >= 2):
+#         count+=1
+# print(count)
+
+T = int(input())
+for i in range(T):
+    N =int(input())
+    S = input().strip()
+    complementary={
+        'A':'T',
+        'T':'A',
+        'C':'G',
+        'G': 'C'
+    }
+    final ="".join(complementary[ch] for ch in S)
+    print(final)
