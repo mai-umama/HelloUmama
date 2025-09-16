@@ -36,11 +36,20 @@
 # final_rent = 2 * X
 # print(final_rent)
 
-n = int(input())
+# n = int(input())
 
-sum = 0
+# sum = 0
 
-while n > 0:
-    sum += n %10
-    n //= 10
-print(sum)
+# while n > 0:
+#     sum += n %10
+#     n //= 10
+# print(sum)
+
+T = int(input())
+for i in range(T):
+    X = int(input())
+
+    if( (10 - X) >=  3):
+        print("Yes")
+    else:
+        print("No")
