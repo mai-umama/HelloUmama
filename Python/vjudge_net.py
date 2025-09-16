@@ -45,11 +45,11 @@
 #     n //= 10
 # print(sum)
 
-T = int(input())
-for i in range(T):
-    X = int(input())
-
-    if( (10 - X) >=  3):
-        print("Yes")
+T = int(input())  
+for _ in range(T):
+    R = list(map(int, input().split()))  
+    
+    if all(d == 0 for d in R):   
+        print("IN")
     else:
-        print("No")
+        print("OUT")
