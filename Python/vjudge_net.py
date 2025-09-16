@@ -45,11 +45,19 @@
 #     n //= 10
 # print(sum)
 
-T = int(input())  
-for _ in range(T):
-    R = list(map(int, input().split()))  
+# T = int(input())  
+# for _ in range(T):
+#     R = list(map(int, input().split()))  
     
-    if all(d == 0 for d in R):   
-        print("IN")
-    else:
-        print("OUT")
+#     if all(d == 0 for d in R):   
+#         print("IN")
+#     else:
+#         print("OUT")
+
+n = int(input())
+count = 0
+for i in range(n):
+    a,b,c = map(int,input().split())
+    if (a+b+c >= 2):
+        count+=1
+print(count)
