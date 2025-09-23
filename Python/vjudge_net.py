@@ -62,15 +62,29 @@
 #         count+=1
 # print(count)
 
-T = int(input())
-for i in range(T):
-    N =int(input())
-    S = input().strip()
-    complementary={
-        'A':'T',
-        'T':'A',
-        'C':'G',
-        'G': 'C'
-    }
-    final ="".join(complementary[ch] for ch in S)
-    print(final)
+# T = int(input())
+# for i in range(T):
+#     N =int(input())
+#     S = input().strip()
+#     complementary={
+#         'A':'T',
+#         'T':'A',
+#         'C':'G',
+#         'G': 'C'
+#     }
+#     final ="".join(complementary[ch] for ch in S)
+#     print(final)
+
+t = int(input())
+for _ in range(t):
+    n = int(input())
+    a = list(map(int, input().split()))
+    
+    if n == 2:
+        print("YES" if a[0] == a[1] else "NO")
+    else:
+        a.sort()
+        from math import gcd
+        from functools import reduce
+        g = reduce(gcd, a)
+        print("YES" if g % 2 == 0 else "NO")
